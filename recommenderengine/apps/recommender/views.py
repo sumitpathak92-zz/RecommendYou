@@ -3,8 +3,8 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
-from apps.neo4japp.models import Movie, Person
-from neo4jtut import db
+from apps.recommender.models import Movie, Person
+from settings import db
 
 
 class MovieDetailView(DetailView):
@@ -26,5 +26,5 @@ class PersonListView(ListView):
 
 
 def index(request):
-    return render_to_response('neo4japp/index.html', {},
+    return render_to_response('recommender/index.html', {},
                               context_instance=RequestContext(request))

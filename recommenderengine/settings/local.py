@@ -1,4 +1,5 @@
 """
+ctober
 Django settings for neo4jtut project.
 
 For more information on this file, see
@@ -11,10 +12,11 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+print "base dir path is ",BASE_DIR
 
 NEO4J_RESOURCE_URI = 'http://localhost:7474'
 NEO4J_USERNAME = 'neo4j'
-NEO4J_PASSWORD = 'CHANGE ME'
+NEO4J_PASSWORD = '--23october--'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -39,7 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.neo4japp',
+    'apps.recommender',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,9 +53,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'neo4jtut.urls'
+ROOT_URLCONF = 'settings.urls'
 
-WSGI_APPLICATION = 'neo4jtut.wsgi.application'
+WSGI_APPLICATION = 'settings.wsgi.application'
 
 
 # Database

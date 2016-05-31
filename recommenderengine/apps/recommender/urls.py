@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-__author__ = 'lundberg'
+__author__ = 'sumit'
 
 from django.conf.urls import url, patterns
-from apps.neo4japp.views import MovieListView, MovieDetailView, PersonListView, PersonDetailView
+from apps.recommender.views import MovieListView, MovieDetailView, PersonListView, PersonDetailView
 
-urlpatterns = patterns('apps.neo4japp.views',
+urlpatterns = patterns('apps.recommender.views',
     # Index view
     url(r'^$', 'index'),
     url(r'^movies/$', MovieListView.as_view(), name='movie-list'),

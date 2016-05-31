@@ -9,9 +9,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'neo4jtut.views.home', name='home'),
+    # url(r'^$', 'settings.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'', include('apps.neo4japp.urls')),
+    url(r'', include('apps.recommender.urls')),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # Static files for development

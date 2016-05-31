@@ -1,5 +1,5 @@
 from django.contrib import admin
-from apps.neo4japp.models import Movie, Person
+from apps.recommender.models import Movie, Person
 
 # Register your models here.
 

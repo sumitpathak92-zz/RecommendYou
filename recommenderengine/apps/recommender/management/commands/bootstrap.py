@@ -3,8 +3,8 @@
 from django.core.management.base import BaseCommand
 from django.db import DatabaseError
 import uuid
-from apps.neo4japp.models import Movie, Person
-from neo4jtut import db
+from apps.recommender.models import Movie, Person
+from settings import db
 
 __author__ = 'lundberg'
 

@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.urlresolvers import reverse
-from neo4jtut import db
+from settings import db
 
 
 # Create your models here.
