@@ -6,7 +6,6 @@ import uuid
 from apps.recommender.models import Movie, Person
 from settings import db
 
-__author__ = 'lundberg'
 
 class Command(BaseCommand):
     help = 'Create a NodeHandle and set handle_id for nodes missing handle_id property'
