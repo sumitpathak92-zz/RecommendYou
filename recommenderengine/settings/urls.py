@@ -14,4 +14,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('apps.recommender.urls')),
-) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # Static files for development
+) \
+              # + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # Static files for development
