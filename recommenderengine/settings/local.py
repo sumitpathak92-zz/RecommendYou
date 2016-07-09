@@ -16,7 +16,7 @@ print "base dir path is ",BASE_DIR
 
 NEO4J_RESOURCE_URI = 'http://localhost:7474'
 NEO4J_USERNAME = 'neo4j'
-NEO4J_PASSWORD = '--23october--'
+NEO4J_PASSWORD = ''
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
